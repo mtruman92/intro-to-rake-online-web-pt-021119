@@ -24,4 +24,9 @@ end
 desc 'drop into the Pry console'
 task :console => :environment do
 end
+
+desc 'seed the database with some dummy data'
+  task :seed do
+    require_relative './db/seeds.rb'
+  end
   
